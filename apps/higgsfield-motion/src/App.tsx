@@ -204,7 +204,7 @@ export default function App() {
                       style={{ width: `${Math.round(state.status.progress * 100)}%` }}
                     />
                   </div>
-                  <div className="absolute top-3 left-3">
+                  <div className="absolute right-3 bottom-4">
                     <Badge variant="secondary" className="font-mono uppercase">
                       {state.status.phase}
                     </Badge>
