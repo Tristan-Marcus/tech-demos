@@ -24,7 +24,7 @@ const collections: CollectionSpec[] = [
     id: 'interface',
     label: 'Interface',
     blurb: 'Navigation, actions and status glyphs every product needs.',
-    keywords: ['ui', 'app', 'nav', 'action'],
+    keywords: ['ui', 'app', 'nav', 'action', 'essentials'],
     names: [
       'Home01Icon', 'Home09Icon', 'Menu01Icon', 'Menu09Icon', 'MenuTwoLineIcon', 'MoreHorizontalIcon', 'MoreVerticalIcon',
       'Search01Icon', 'SearchListIcon', 'FilterIcon', 'FilterHorizontalIcon', 'Settings01Icon', 'Settings02Icon',
@@ -53,7 +53,7 @@ const collections: CollectionSpec[] = [
     id: 'arrows',
     label: 'Arrows',
     blurb: 'Direction, motion and every chevron you will ever need.',
-    keywords: ['direction', 'chevron', 'navigate', 'back', 'next'],
+    keywords: ['direction', 'navigate', 'motion'],
     names: [
       'ArrowUp01Icon', 'ArrowDown01Icon', 'ArrowLeft01Icon', 'ArrowRight01Icon',
       'ArrowUp02Icon', 'ArrowDown02Icon', 'ArrowLeft02Icon', 'ArrowRight02Icon',
@@ -86,7 +86,7 @@ const collections: CollectionSpec[] = [
     id: 'charts',
     label: 'Charts',
     blurb: 'Bars, lines, pies and the data plumbing behind them.',
-    keywords: ['data', 'analytics', 'graph', 'stats', 'metric'],
+    keywords: ['data', 'stats', 'metric', 'graph', 'dashboard'],
     names: [
       'ChartIcon', 'ChartUpIcon', 'ChartDownIcon', 'ChartIncreaseIcon', 'ChartDecreaseIcon', 'ChartAverageIcon',
       'ChartLineIcon', 'ChartLineDataIcon', 'ChartSplineIcon', 'ChartAreaIcon',
@@ -109,7 +109,7 @@ const collections: CollectionSpec[] = [
     id: 'media',
     label: 'Media',
     blurb: 'Playback, capture and everything with a waveform.',
-    keywords: ['audio', 'video', 'photo', 'music', 'player'],
+    keywords: ['player', 'multimedia', 'playback'],
     names: [
       'PlayIcon', 'PlayCircleIcon', 'PlaySquareIcon', 'PauseIcon', 'PauseCircleIcon', 'StopIcon', 'StopCircleIcon', 'RecordIcon',
       'NextIcon', 'PreviousIcon', 'ForwardIcon', 'BackwardIcon', 'FastForwardIcon', 'RewindIcon', 'RepeatIcon', 'RepeatOffIcon', 'ShuffleIcon',
@@ -129,7 +129,7 @@ const collections: CollectionSpec[] = [
     id: 'finance',
     label: 'Finance',
     blurb: 'Money in, money out, and the plastic in between.',
-    keywords: ['money', 'payment', 'commerce', 'shop', 'currency'],
+    keywords: ['commerce', 'currency', 'fintech', 'billing'],
     names: [
       'WalletIcon', 'WalletAddIcon', 'WalletDoneIcon', 'WalletCardsIcon', 'WalletMinimalIcon', 'WalletNotFoundIcon', 'PurseIcon',
       'CreditCardIcon', 'CreditCardAddIcon', 'CreditCardAcceptIcon', 'CreditCardPosIcon', 'CreditCardFreezeIcon', 'CreditCardValidationIcon',
@@ -150,7 +150,7 @@ const collections: CollectionSpec[] = [
     id: 'files',
     label: 'Files',
     blurb: 'Documents, folders and the states they get into.',
-    keywords: ['document', 'folder', 'storage', 'attachment'],
+    keywords: ['storage', 'docs', 'filesystem'],
     names: [
       'File01Icon', 'File02Icon', 'FileAddIcon', 'FileRemoveIcon', 'FileEditIcon', 'FileCheckIcon', 'FileXIcon',
       'FileSearchIcon', 'FileDownloadIcon', 'FileUploadIcon', 'FileExportIcon', 'FileImportIcon', 'FileSyncIcon',
@@ -174,7 +174,7 @@ const collections: CollectionSpec[] = [
     id: 'devices',
     label: 'Devices',
     blurb: 'Hardware, connectivity and the state of your battery.',
-    keywords: ['hardware', 'phone', 'computer', 'connectivity'],
+    keywords: ['hardware', 'connectivity', 'gadget'],
     names: [
       'SmartPhone01Icon', 'SmartPhoneLandscapeIcon', 'SmartphoneChargingIcon', 'SmartphoneNfcIcon', 'SmartphoneWifiIcon', 'SmartphoneLostWifiIcon',
       'PhoneIcon', 'PhoneLockIcon', 'PhoneOffIcon', 'PhoneCheckIcon', 'PhoneDeveloperModeIcon', 'PhoneShakeIcon',
@@ -199,7 +199,7 @@ const collections: CollectionSpec[] = [
     id: 'development',
     label: 'Development',
     blurb: 'Code, git, infra and the terminal you live in.',
-    keywords: ['code', 'programming', 'git', 'infra', 'terminal', 'api'],
+    keywords: ['dev', 'infra', 'backend', 'devtools', 'engineering'],
     names: [
       'CodeIcon', 'CodeSimpleIcon', 'CodeSquareIcon', 'CodeCircleIcon', 'CodeFolderIcon', 'CodeXmlIcon', 'SourceCodeIcon', 'SourceCodeSquareIcon',
       'BracketsIcon', 'BracesIcon', 'FirstBracketIcon', 'SecondBracketIcon', 'ThirdBracketIcon', 'BinaryCodeIcon', 'BinaryIcon',
@@ -222,7 +222,7 @@ const collections: CollectionSpec[] = [
     id: 'editor',
     label: 'Editor',
     blurb: 'Text formatting, layout and design-tool primitives.',
-    keywords: ['text', 'typography', 'format', 'design', 'layout'],
+    keywords: ['typography', 'format', 'design', 'wysiwyg'],
     names: [
       'TextIcon', 'TextBoldIcon', 'TextItalicIcon', 'TextUnderlineIcon', 'TextStrikethroughIcon', 'TextSubscriptIcon', 'TextSuperscriptIcon',
       'TextAlignLeftIcon', 'TextAlignCenterIcon', 'TextAlignRightIcon', 'TextAlignJustifyCenterIcon',
@@ -248,7 +248,7 @@ const collections: CollectionSpec[] = [
     id: 'security',
     label: 'Security',
     blurb: 'Locks, keys, shields and identity.',
-    keywords: ['auth', 'privacy', 'protection', 'identity', 'password'],
+    keywords: ['auth', 'privacy', 'protection', 'identity'],
     names: [
       'LockIcon', 'LockOpenIcon', 'LockKeyholeIcon', 'LockKeyholeOpenIcon', 'LockPasswordIcon', 'LockKeyIcon', 'LockComputerIcon', 'LockSyncIcon', 'LockedIcon',
       'CircleLockIcon', 'CircleLockCheckIcon', 'CircleLockAddIcon', 'CircleUnlockIcon', 'SquareLock01Icon', 'SquareUnlock01Icon',
@@ -270,7 +270,7 @@ const collections: CollectionSpec[] = [
     id: 'ai',
     label: 'AI',
     blurb: 'Sparkles, brains and the new generation of product glyphs.',
-    keywords: ['ml', 'assistant', 'generate', 'llm', 'magic', 'sparkle'],
+    keywords: ['ml', 'assistant', 'llm', 'genai', 'copilot'],
     names: [
       'SparklesIcon', 'SparkleIcon', 'AiSparklesIcon', 'MagicWand01Icon', 'MagicWandIcon', 'WandSparklesIcon', 'WandIcon',
       'AiBrainIcon', 'BrainIcon', 'BrainCircuitIcon', 'BrainCogIcon', 'NeuralNetworkIcon', 'ArtificialIntelligenceIcon', 'AiChipIcon', 'AiNetworkIcon',
@@ -288,7 +288,7 @@ const collections: CollectionSpec[] = [
     id: 'brands',
     label: 'Brands',
     blurb: 'Logos for the tools and platforms your product talks to.',
-    keywords: ['logo', 'social', 'platform', 'company'],
+    keywords: ['logo', 'social', 'platform', 'company', 'integrations'],
     names: [
       'GithubIcon', 'GitlabIcon', 'FigmaIcon', 'FramerIcon', 'NotionIcon', 'SlackIcon', 'DiscordIcon', 'TelegramIcon', 'WhatsappIcon', 'WhatsappBusinessIcon',
       'NewTwitterIcon', 'NewTwitterRectangleIcon', 'ThreadsIcon', 'InstagramIcon', 'FacebookIcon', 'LinkedinIcon', 'RedditIcon', 'TiktokIcon', 'SnapchatIcon', 'PinterestIcon', 'XingIcon',

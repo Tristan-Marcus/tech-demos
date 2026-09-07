@@ -14,7 +14,7 @@ export function IconGrid({ icons, selected, onSelect }: Props) {
     <div
       role="listbox"
       aria-label="Icons"
-      className="grid grid-cols-[repeat(auto-fill,minmax(84px,1fr))] gap-1.5"
+      className="grid grid-cols-[repeat(auto-fill,minmax(72px,1fr))] gap-1"
     >
       {icons.map((icon) => (
         <Tile key={icon.name} icon={icon} selected={icon.name === selected} onSelect={onSelect} />
@@ -49,7 +49,7 @@ const Tile = memo(function Tile({
     >
       <HugeiconsIcon
         icon={icon.icon}
-        size={22}
+        size={24}
         strokeWidth={1.5}
         className={cn('transition-transform duration-200 ease-out', !selected && 'group-hover:-translate-y-1.5')}
       />
@@ -69,7 +69,7 @@ const Tile = memo(function Tile({
 
 export function GridSkeleton({ count = 96 }: { count?: number }) {
   return (
-    <div className="grid grid-cols-[repeat(auto-fill,minmax(84px,1fr))] gap-1.5" aria-busy>
+    <div className="grid grid-cols-[repeat(auto-fill,minmax(72px,1fr))] gap-1" aria-busy>
       {Array.from({ length: count }, (_, i) => (
         <div
           key={i}

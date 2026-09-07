@@ -5,6 +5,8 @@
 @import "@fontsource-variable/geist-mono";
 
 @custom-variant dark (&:is(.dark *));
+/* Desktop tool: plain :hover instead of Tailwind's `@media (hover: hover)` gate. */
+@custom-variant hover (&:hover);
 
 @theme inline {
   --font-sans: 'Geist Variable', ui-sans-serif, system-ui, sans-serif;

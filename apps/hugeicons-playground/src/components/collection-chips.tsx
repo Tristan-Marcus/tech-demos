@@ -10,7 +10,7 @@ type Props = {
 
 export function CollectionChips({ collections, total, active, onChange }: Props) {
   return (
-    <div className="no-scrollbar -mx-1 flex items-center gap-1 overflow-x-auto px-1 py-0.5">
+    <div className="-mx-1 flex flex-wrap items-center gap-1 px-1 py-0.5">
       <Chip label="All" count={total} active={active === null} onClick={() => onChange(null)} />
       <span className="mx-1 h-4 w-px shrink-0 bg-border" aria-hidden />
       {collections.map((c) => (

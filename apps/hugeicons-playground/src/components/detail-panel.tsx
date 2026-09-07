@@ -37,11 +37,11 @@ export function DetailPanel({ icon, collections, settings, onSettings, onClose }
 
   return (
     <div className="flex h-full flex-col">
-      <div className="flex items-start justify-between gap-3 px-5 pt-5 pb-4">
+      <div className="flex items-start justify-between gap-3 px-5 pt-4 pb-3">
         <div className="min-w-0">
           <h2 className="truncate text-[15px] font-medium tracking-[-0.01em]">{icon.label}</h2>
           <p className="mt-0.5 truncate font-mono text-xs text-muted-foreground">{icon.name}</p>
-          <div className="mt-2 flex flex-wrap gap-1">
+          <div className="mt-1.5 flex flex-wrap gap-1">
             {icon.collections.map((id) => {
               const c = collections.find((x) => x.id === id)
               return c ? (
@@ -65,7 +65,7 @@ export function DetailPanel({ icon, collections, settings, onSettings, onClose }
       </div>
 
       <div className="quiet-scroll flex-1 overflow-y-auto px-5 pb-5">
-        <div className="dot-canvas relative grid h-56 place-items-center overflow-hidden rounded-xl border">
+        <div className="dot-canvas relative grid h-40 place-items-center overflow-hidden rounded-xl border">
           <HugeiconsIcon
             key={icon.name}
             icon={icon.icon}
@@ -79,9 +79,9 @@ export function DetailPanel({ icon, collections, settings, onSettings, onClose }
           </span>
         </div>
 
-        <div className="mt-3 flex items-end justify-between rounded-xl border bg-card/40 px-4 py-3" style={{ color: previewColor }}>
+        <div className="mt-2.5 flex items-end justify-between rounded-xl border bg-card/40 px-4 py-2.5" style={{ color: previewColor }}>
           {SIZE_PRESETS.map((s) => (
-            <div key={s} className="flex flex-col items-center gap-2">
+            <div key={s} className="flex flex-col items-center gap-1.5">
               <HugeiconsIcon icon={icon.icon} size={s} strokeWidth={settings.strokeWidth} />
               <span className="font-mono text-[10px] text-muted-foreground tabular-nums">{s}</span>
             </div>
@@ -151,7 +151,7 @@ export function DetailPanel({ icon, collections, settings, onSettings, onClose }
           </div>
         </Field>
 
-        <div className="mt-6">
+        <div className="mt-5">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-0.5 rounded-md bg-card p-0.5">
               {(['react', 'svg'] as const).map((t) => (
@@ -179,7 +179,7 @@ export function DetailPanel({ icon, collections, settings, onSettings, onClose }
             </Button>
           </div>
 
-          <pre className="quiet-scroll mt-2 overflow-x-auto rounded-xl border bg-card/60 p-4 font-mono text-[12px] leading-[1.7] text-foreground/85">
+          <pre className="mt-2 rounded-xl border bg-card/60 p-4 font-mono text-[12px] leading-[1.65] whitespace-pre-wrap break-words text-foreground/85">
             {tab === 'react' ? <ReactCode name={icon.name} s={settings} /> : <code>{code}</code>}
           </pre>
         </div>
@@ -190,12 +190,12 @@ export function DetailPanel({ icon, collections, settings, onSettings, onClose }
 
 function Field({ label, value, children }: { label: string; value: string; children: React.ReactNode }) {
   return (
-    <div className="mt-5">
-      <div className="mb-2.5 flex items-center justify-between">
+    <div className="mt-3.5">
+      <div className="mb-1.5 flex items-center justify-between">
         <span className="text-[12px] font-medium text-muted-foreground uppercase tracking-[0.08em]">{label}</span>
         <span className="font-mono text-xs text-foreground/80 tabular-nums">{value}</span>
       </div>
-      <div className="space-y-2.5">{children}</div>
+      <div className="space-y-2">{children}</div>
     </div>
   )
 }

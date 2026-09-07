@@ -1139,18 +1139,18 @@ export type IconEntry = {
 export type Collection = { id: string; label: string; blurb: string; keywords: string[]; count: number }
 
 export const collections: Collection[] = [
-  { id: "interface", label: "Interface", blurb: "Navigation, actions and status glyphs every product needs.", keywords: ["ui","app","nav","action"], count: 125 },
-  { id: "arrows", label: "Arrows", blurb: "Direction, motion and every chevron you will ever need.", keywords: ["direction","chevron","navigate","back","next"], count: 106 },
-  { id: "charts", label: "Charts", blurb: "Bars, lines, pies and the data plumbing behind them.", keywords: ["data","analytics","graph","stats","metric"], count: 75 },
-  { id: "media", label: "Media", blurb: "Playback, capture and everything with a waveform.", keywords: ["audio","video","photo","music","player"], count: 77 },
-  { id: "finance", label: "Finance", blurb: "Money in, money out, and the plastic in between.", keywords: ["money","payment","commerce","shop","currency"], count: 88 },
-  { id: "files", label: "Files", blurb: "Documents, folders and the states they get into.", keywords: ["document","folder","storage","attachment"], count: 105 },
-  { id: "devices", label: "Devices", blurb: "Hardware, connectivity and the state of your battery.", keywords: ["hardware","phone","computer","connectivity"], count: 113 },
-  { id: "development", label: "Development", blurb: "Code, git, infra and the terminal you live in.", keywords: ["code","programming","git","infra","terminal","api"], count: 104 },
-  { id: "editor", label: "Editor", blurb: "Text formatting, layout and design-tool primitives.", keywords: ["text","typography","format","design","layout"], count: 126 },
-  { id: "security", label: "Security", blurb: "Locks, keys, shields and identity.", keywords: ["auth","privacy","protection","identity","password"], count: 110 },
-  { id: "ai", label: "AI", blurb: "Sparkles, brains and the new generation of product glyphs.", keywords: ["ml","assistant","generate","llm","magic","sparkle"], count: 92 },
-  { id: "brands", label: "Brands", blurb: "Logos for the tools and platforms your product talks to.", keywords: ["logo","social","platform","company"], count: 70 },
+  { id: "interface", label: "Interface", blurb: "Navigation, actions and status glyphs every product needs.", keywords: ["ui","app","nav","action","essentials"], count: 125 },
+  { id: "arrows", label: "Arrows", blurb: "Direction, motion and every chevron you will ever need.", keywords: ["direction","navigate","motion"], count: 106 },
+  { id: "charts", label: "Charts", blurb: "Bars, lines, pies and the data plumbing behind them.", keywords: ["data","stats","metric","graph","dashboard"], count: 75 },
+  { id: "media", label: "Media", blurb: "Playback, capture and everything with a waveform.", keywords: ["player","multimedia","playback"], count: 77 },
+  { id: "finance", label: "Finance", blurb: "Money in, money out, and the plastic in between.", keywords: ["commerce","currency","fintech","billing"], count: 88 },
+  { id: "files", label: "Files", blurb: "Documents, folders and the states they get into.", keywords: ["storage","docs","filesystem"], count: 105 },
+  { id: "devices", label: "Devices", blurb: "Hardware, connectivity and the state of your battery.", keywords: ["hardware","connectivity","gadget"], count: 113 },
+  { id: "development", label: "Development", blurb: "Code, git, infra and the terminal you live in.", keywords: ["dev","infra","backend","devtools","engineering"], count: 104 },
+  { id: "editor", label: "Editor", blurb: "Text formatting, layout and design-tool primitives.", keywords: ["typography","format","design","wysiwyg"], count: 126 },
+  { id: "security", label: "Security", blurb: "Locks, keys, shields and identity.", keywords: ["auth","privacy","protection","identity"], count: 110 },
+  { id: "ai", label: "AI", blurb: "Sparkles, brains and the new generation of product glyphs.", keywords: ["ml","assistant","llm","genai","copilot"], count: 92 },
+  { id: "brands", label: "Brands", blurb: "Logos for the tools and platforms your product talks to.", keywords: ["logo","social","platform","company","integrations"], count: 70 },
 ]
 
 export const icons: IconEntry[] = [
