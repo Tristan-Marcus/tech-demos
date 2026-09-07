@@ -1,0 +1,19 @@
+{
+  "proposed": [
+    {
+      "id": "2095467591682654455",
+      "title": "Hugeicons",
+      "url": "https://x.com/noman_huge/status/2095467591682654455",
+      "date": "2026-09-07",
+      "tech": "Hugeicons"
+    }
+  ],
+  "built": [
+    {
+      "id": "2095467591682654455",
+      "title": "Hugeicons",
+      "app": "apps/hugeicons-playground",
+      "date": "2026-09-07"
+    }
+  ]
+}
